@@ -76,7 +76,7 @@ if (($_SERVER['REQUEST_METHOD'] ?? '') === 'POST') {
 
 
             // $mailClient->setFrom('info@vegashotelsng.com', 'Vegas Astoria Hotel & Suites LTD');
-            $mailClient->setFrom('lawrencechrisojor@gmail.com', 'Vegas Astoria Hotel & Suites LTD');
+            $mailClient->setFrom('bookings@vegasastoriahotel.com', 'Vegas Astoria Hotel & Suites LTD');
             $mailClient->addAddress($email, $name);
             $mailClient->Subject = 'Booking Confirmation';
             $mailClient->isHTML(true);
