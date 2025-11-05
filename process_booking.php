@@ -60,19 +60,19 @@ if (($_SERVER['REQUEST_METHOD'] ?? '') === 'POST') {
         $mailClient = new PHPMailer(true);
         try {
             $mailClient->isSMTP();
-            // $mailClient->Host = 'mail.info@vegashotelsng.com';
-            // $mailClient->SMTPAuth = true;
-            // $mailClient->Username = 'info@vegashotelsng.com';
-            // $mailClient->Password = 'GLL.pk]]CQQ6';
-            // $mailClient->SMTPSecure = 'ssl';
-            // $mailClient->Port = 465;
-
-            $mailClient->Host = 'smtp.mailtrap.io';
+            $mailClient->Host = 'mail.vegasastoriahotel.com';
             $mailClient->SMTPAuth = true;
-            $mailClient->Username = 'c37ef4508c01e6';
-            $mailClient->Password = '25db67cf9f349e';
-            $mailClient->SMTPSecure = 'tls';
-            $mailClient->Port = 2525;
+            $mailClient->Username = 'bookings@vegasastoriahotel.com';
+            $mailClient->Password = 'l?9oet?ad@Q?OXF*';
+            $mailClient->SMTPSecure = 'ssl';
+            $mailClient->Port = 465;
+
+            // $mailClient->Host = 'smtp.mailtrap.io';
+            // $mailClient->SMTPAuth = true;
+            // $mailClient->Username = 'c37ef4508c01e6';
+            // $mailClient->Password = '25db67cf9f349e';
+            // $mailClient->SMTPSecure = 'tls';
+            // $mailClient->Port = 2525;
 
 
             // $mailClient->setFrom('info@vegashotelsng.com', 'Vegas Astoria Hotel & Suites LTD');
@@ -140,25 +140,26 @@ if (($_SERVER['REQUEST_METHOD'] ?? '') === 'POST') {
         $mailAdmin = new PHPMailer(true);
         try {
             $mailAdmin->isSMTP();
-            // $mailAdmin->Host = 'mail.vegashotelsng.com';
-            // $mailAdmin->SMTPAuth = true;
-            // $mailAdmin->Username = 'info@vegashotelsng.com';
-            // $mailAdmin->Password = 'GLL.pk]]CQQ6';
-            // $mailAdmin->SMTPSecure = 'ssl';
-            // $mailAdmin->Port = 465;
+            $mailClient->isSMTP();
+            $mailClient->Host = 'mail.vegasastoriahotel.com';
+            $mailClient->SMTPAuth = true;
+            $mailClient->Username = 'bookings@vegasastoriahotel.com';
+            $mailClient->Password = 'l?9oet?ad@Q?OXF*';
+            $mailClient->SMTPSecure = 'ssl';
+            $mailClient->Port = 465;
 
-            $mailAdmin->Host = 'smtp.mailtrap.io';
-            $mailAdmin->SMTPAuth = true;
-            $mailAdmin->Username = 'c37ef4508c01e6';
-            $mailAdmin->Password = '25db67cf9f349e';
-            $mailAdmin->SMTPSecure = 'tls';
-            $mailAdmin->Port = 2525;
+            // $mailAdmin->Host = 'smtp.mailtrap.io';
+            // $mailAdmin->SMTPAuth = true;
+            // $mailAdmin->Username = 'c37ef4508c01e6';
+            // $mailAdmin->Password = '25db67cf9f349e';
+            // $mailAdmin->SMTPSecure = 'tls';
+            // $mailAdmin->Port = 2525;
 
 
             // $mailAdmin->setFrom('info@vegashotelsng.com', 'Vegas Astoria Hotel & Suites LTD');
             // $mailAdmin->addAddress('info@vegashotelsng.com', 'Vegas Astoria Hotel & Suites LTD'); // Admin email
-            $mailAdmin->setFrom('lawrencechrisojor@gmail.com', 'Vegas Astoria Hotel & Suites LTD');
-            $mailAdmin->addAddress('lifeofrence@gmail.com', 'Vegas Astoria Hotel & Suites LTD'); // Admin email
+            $mailAdmin->setFrom('bookings@vegasastoriahotel.com', 'Vegas Astoria Hotel & Suites LTD');
+            $mailAdmin->addAddress('info@vegasastoriahotel.com', 'Vegas Astoria Hotel & Suites LTD'); // Admin email
             $mailAdmin->Subject = 'New Booking Received';
             $mailAdmin->isHTML(true);
 
