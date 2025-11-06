@@ -5,7 +5,7 @@ const rooms = [
   { id: "queens-luxury", name: "Queens Luxury", description: "Luxury room with jacuzzi", rate: 120000, tags: ["Jacuzzi", "Breakfast"] },
   { id: "vegas-suits", name: "Vegas Suits", description: "1 bedroom with living room", rate: 150000, tags: ["Living room", "Breakfast"] },
   { id: "lake-view", name: "Lake View", description: "1 bedroom with living room overseeing Niger River", rate: 200000, tags: ["River view", "Living room"] },
-  { id: "ambassadorial-suits", name: "ambassadorial Suits", description: "2 bedroom with dining and kitchen", rate: 250000, tags: ["Kitchen", "Dining"] },
+  { id: "ambassadorial-suites", name: "ambassadorial Suites", description: "2 bedroom with dining and kitchen", rate: 250000, tags: ["Kitchen", "Dining"] },
   { id: "aficionado", name: "Aficionado (Banquet Hall)", description: "Capacity (1 – 500)", rate: 1500000, tags: ["Events", "Banquet"] },
   { id: "angels", name: "Angels (Board Room)", description: "Capacity (1 – 30)", rate: 300000, tags: ["Board room"] },
 ];
